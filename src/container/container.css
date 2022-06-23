@@ -1,0 +1,218 @@
+.Feature {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);            
+}
+.Feature .card {
+    text-align: center;
+    padding: 40px;
+    border-right: solid 1px #0002;
+}
+.Feature i {
+    color: #5b5b5b;
+    font-size: 30px;
+}
+.Feature h3 {
+    font-family: 'Bebas Neue';
+    color: #0d2e57;
+    margin: 20px 0;
+}
+.Feature a {
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: 20px;
+    color: #3954d9;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .Feature {
+        grid-template-columns: repeat(2, 50%);           
+    }
+    .Feature .card {
+        border-bottom: solid 1px #0002;
+    }
+}
+@media (max-width: 767px) {
+    .Feature {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));           
+    }
+    .Feature .card {
+        border-bottom: solid 1px #0002;
+    }
+}
+
+.offers {
+    display: flex;
+    font-family: "Montserrat";
+}
+.offers .text,
+.offers img {
+    width: 50%;
+}
+.offers .text {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f0f0;
+    text-align: center;
+}
+.offers .text h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #616161;
+}
+.offers .text h3 {
+    margin: 30px 0;
+    font-size: 24px;
+    font-family: 'Bebas Neue';
+    color: #0d2e57;
+}
+.offers .text p {
+    text-align: justify;
+}
+.offers .price {
+    margin: 40px 0;
+    font-size: 30px;
+    color: #3954d9;
+    font-weight: bold;
+}
+.offers .price span {
+    margin-left: 30px;
+    font-size: 22px;
+    color: #121212;
+    text-decoration: line-through;
+}
+.offers .timer {
+    display: flex;
+    gap: 50px;
+    color: #2d2b27;
+    font-weight: bold;
+}
+.offers .timer div {
+    display: flex;
+    flex-direction: column;
+}
+.offers .timer span:first-child {
+    font-size: 35px;
+}
+.offers .timer span:last-child {
+    display: block;
+    margin-top: 10px;
+}
+.offers .shop {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #3954d9;
+    border-radius: 20px;
+    font-family: "Montserrat";
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .offers .text h5 {
+        font-size: 16px;
+    }
+    .offers .text h3 {
+        font-size: 18px;
+    }
+} 
+@media (min-width: 768px) and (max-width: 991px) {
+    .offers {
+        flex-direction: column-reverse;
+    }
+    .offers .text,
+    .offers img {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .offers {
+        flex-direction: column-reverse;
+    }
+    .offers .text,
+    .offers img {
+        width: 100%;
+    }
+    .offers .text {
+        padding: 70px 30px;
+    }
+    .offers .timer {
+        display: flex;
+        gap: 20px;
+        color: #2d2b27;
+        font-weight: bold;
+    }
+}
+
+.Product {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+.Product .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 250px; */
+    padding: 30px;
+    border-right: solid .5px #0002;
+    border-bottom: solid .5px #0002;
+}
+.Product img {
+    max-width: 100%;
+    max-height: 150px;
+}
+.Product h3 {
+    color: #0d2e57;
+    font-family: 'Bebas Neue';
+    margin-bottom: 5px;
+}
+.Product .card div {
+    color: #3954d9;
+    font-weight: bold;
+}
+.Product span {
+    margin-left: 5px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+.images img {
+    width: 100%;
+    height: 100%;
+}
+.brand {
+    display: grid;
+    grid-template-columns: repeat(6, calc(100% / 6));
+    
+}
+.brand div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-right: solid .5px #0002;
+    border-bottom: solid .5px #0002;
+}
+.brand img {
+    width: 100%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .brand {
+        grid-template-columns: repeat(4, 25%);
+    }
+}
+@media (max-width: 767px) {
+    .images {
+        grid-template-columns: repeat(2, 50%);
+    }
+    .brand {
+        grid-template-columns: repeat(3, calc(100% / 3));
+    }
+    .brand div {
+        padding: 30px;
+    }
+}
