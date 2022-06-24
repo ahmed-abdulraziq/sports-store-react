@@ -99,7 +99,11 @@ export const Container = () => {
                     <div className="text">
                         <h5>Offer Of The Month</h5>
                         <h3>Phantom Vision Elite Dynamic</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and type settLorem Ipsum is simply dummy text of thebbv hyyu and type iLorem Ipsum is simply dummy text of the printing and type settiLorem Ipsum is simply dummy text of the printing and type </p>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and type settLorem Ipsum is simply dummy 
+                            text of thebbv hyyu and type iLorem Ipsum is simply dummy text of the printing and type 
+                            settiLorem Ipsum is simply dummy text of the printing and type 
+                        </p>
                         <div className="price">$500 <span>$2000</span></div>
                         <div className="timer">
                             <div><span>{hours}</span>....<span>Hours</span></div>
