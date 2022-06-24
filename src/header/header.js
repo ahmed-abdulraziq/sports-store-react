@@ -1,4 +1,5 @@
 import React, {Fragment} from "react";
+import { Link } from "react-router-dom";
 import './header.css';
 import  {to} from '../container/container';
 
@@ -19,9 +20,9 @@ const Header = () => {
                     </div>
                     <div className="menu right">
                         <ol>
-                            <li><a href=""><i className="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href=""><i className="fa-brands fa-twitter"></i></a></li>
-                            <li><a href=""><i className="fa-brands fa-google-plus-g"></i></a></li>
+                            <li><Link to=""><i className="fa-brands fa-facebook-f"></i></Link></li>
+                            <li><Link to=""><i className="fa-brands fa-twitter"></i></Link></li>
+                            <li><Link to=""><i className="fa-brands fa-google-plus-g"></i></Link></li>
                         </ol>
                         <button className="shoping"><i className="fa-solid fa-bag-shopping"></i></button>
                         <button><i className="fa-solid fa-magnifying-glass"></i></button>
@@ -31,7 +32,7 @@ const Header = () => {
                     <div>
                         <h1>NIKE Shoes</h1>
                         <span className="sign">SIGN UP NOW AND GET 50% OFF</span>
-                        <a href="#" className="shop">SHOP NOW</a>
+                        <Link to="#" className="shop">SHOP NOW</Link>
                     </div>
                 </header>
         </Fragment>

@@ -1,4 +1,5 @@
 import React, {Fragment,useState} from "react";
+import { Link } from "react-router-dom";
 import './container.css';
 
 let type = '';
@@ -73,25 +74,25 @@ export const Container = () => {
                         <i className="fas fa-magic fa-3x"></i>
                         <h3>Free Shipping</h3>
                         <p>Lorem text of the printing and type settiLorem Ipsum  dummy text of the printing and type setti</p>
-                        <a href="">Click here</a>
+                        <Link to="">Click here</Link>
                     </div>
                     <div className="card">
                         <i className="fas fa-magic fa-3x"></i>
                         <h3>Free Shipping</h3>
                         <p>Lorem Ipsum  dummy text of the printing and type settiLorem Ipsum  dummy text of the printing and type setti</p>
-                        <a href="">Click here</a>
+                        <Link to="">Click here</Link>
                     </div>
                     <div className="card">
                         <i className="fas fa-magic fa-3x"></i>
                         <h3>Free Shipping</h3>
                         <p>Lorem Ipsum  dummy text of the printing and type settiLorem Ipsum  dummy text of the printing and type setti</p>
-                        <a href="">Click here</a>
+                        <Link to="">Click here</Link>
                     </div>
                     <div className="card">
                         <i className="fas fa-magic fa-3x"></i>
                         <h3>Free Shipping</h3>
                         <p>Lorem Ipsum  dummy text of the printing and type settiLorem Ipsum  dummy text of the printing and type setti</p>
-                        <a href="">Click here</a>
+                        <Link to="">Click here</Link>
                     </div>
                 </section>
                 <section className="offers">
@@ -105,7 +106,7 @@ export const Container = () => {
                             <div><span>{minutes}</span>....<span>Minutes</span></div>
                             <div><span>{seconds}</span>....<span>Seconds</span></div>
                         </div>
-                        <a href="#" className="shop">SHOP NOW</a>
+                        <Link to="#" className="shop">SHOP NOW</Link>
                     </div>
                     <img src={require('../img/Image.png')} alt=""/>
                 </section>
